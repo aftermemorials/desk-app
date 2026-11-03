@@ -1,0 +1,32 @@
+:root{--bg:#000;--c1:#1c1c1e;--c2:#2c2c2e;--g:#00d35a;--r:#ff453a;--o:#ff9f0a;--cy:#64d2ff;--y:#ffd60a;--p:#ff6b9a;--t2:#8e8e93}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:#fff;font-family:-apple-system,"SF Pro Text","SF Pro Display",system-ui,sans-serif;font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased;padding:env(safe-area-inset-top) 0 calc(84px + env(safe-area-inset-bottom))}
+header{display:flex;align-items:center;justify-content:space-between;padding:14px 16px 6px}
+.title{font:700 32px/1.1 "SF Pro Display",-apple-system,system-ui}
+.pill{background:var(--o);color:#000;font:700 12px/1 -apple-system,system-ui;padding:6px 10px;border-radius:99px;letter-spacing:.5px}
+.pill.live{background:var(--r);color:#fff}
+main{padding:8px 16px}
+.card{background:var(--c1);border-radius:16px;padding:14px;margin-bottom:12px}
+.card h3{font-size:13px;color:var(--t2);font-weight:600;text-transform:uppercase;letter-spacing:.4px;margin-bottom:8px}
+.big{font:700 40px/1.1 "SF Pro Display",-apple-system,system-ui}
+.sub{color:var(--t2);font-size:14px;margin-top:4px}
+.g{color:var(--g)}.r{color:var(--r)}.o{color:var(--o)}.cy{color:var(--cy)}.y{color:var(--y)}.pk{color:var(--p)}
+canvas{width:100%;height:150px;display:block;margin-top:10px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-top:1px solid var(--c2);font-size:15px;gap:8px}
+.row:first-of-type{border-top:0}.row small{color:var(--t2);font-size:12px;display:block}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.agent{aspect-ratio:504/470;background:var(--c1);border-radius:18px;padding:14px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.agent .n{font-weight:700;font-size:17px}.agent .s{font-size:12px;color:var(--t2)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:var(--g)}
+.dot.off{background:var(--r)}.dot.stale{background:var(--y)}
+.agent .k{font:700 26px/1 "SF Pro Display",-apple-system,system-ui}
+a.btn{display:block;text-align:center;background:var(--g);color:#000;font-weight:700;padding:12px;border-radius:12px;text-decoration:none;margin-top:10px}
+a.btn.sec{background:var(--c2);color:#fff}
+a{color:var(--cy)}
+.state{color:var(--t2);text-align:center;padding:60px 20px;font-size:15px}.state.err{color:var(--r)}
+.layers span{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:3px;background:var(--c2)}
+.layers .green{background:var(--g)}.layers .red{background:var(--r)}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;background:rgba(28,28,30,.72);-webkit-backdrop-filter:blur(20px) saturate(180%);backdrop-filter:blur(20px) saturate(180%);border-top:.5px solid rgba(255,255,255,.12);padding-bottom:env(safe-area-inset-bottom)}
+nav button{flex:1;background:none;border:0;color:var(--t2);font:500 10px -apple-system,system-ui;padding:8px 0 10px;display:flex;flex-direction:column;align-items:center;gap:3px}
+nav button i{font-style:normal;font-size:22px}nav button.on{color:var(--g)}
+.stamp{color:var(--t2);font-size:11px;text-align:center;margin:6px 0 12px}
